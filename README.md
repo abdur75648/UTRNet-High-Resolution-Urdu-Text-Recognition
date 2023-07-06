@@ -124,17 +124,14 @@ This is an official repository of the project. The copyright of the dataset and 
 If you use the code/dataset, please cite the following paper:
 
 ```BibTeX
-@inproceedings{Abdur2023UTRNet,
-  title = {UTRNet: High-Resolution Urdu Text Recognition in Printed Documents},
-  author = {Abdur Rahman and Arjun Ghosh and Chetan Arora},
-  year = {2023},
-  booktitle = {2023 17th International Conference on Document Analysis and Recognition (ICDAR)},
-  organization = {IEEE},
-  doi = {10.48550/arXiv.2306.15782},
-  url = {https://arxiv.org/abs/2306.15782},
-  eprint = {2306.15782},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.CV}
+@article{rahman2023utrnet,
+      title={UTRNet: High-Resolution Urdu Text Recognition In Printed Documents}, 
+      author={Abdur Rahman and Arjun Ghosh and Chetan Arora},
+      journal={arXiv preprint arXiv:2306.15782},
+      year={2023},
+      eprint={2306.15782},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
