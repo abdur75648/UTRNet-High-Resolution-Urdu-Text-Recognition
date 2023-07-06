@@ -131,7 +131,9 @@ If you use the code/dataset, please cite the following paper:
       year={2023},
       eprint={2306.15782},
       archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      primaryClass={cs.CV},
+      doi = {https://doi.org/10.48550/arXiv.2306.15782},
+      url = {https://arxiv.org/abs/2306.15782}
 }
 ```
 
