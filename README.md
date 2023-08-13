@@ -16,7 +16,7 @@
 ### Installation
 1. Clone the repository
 ```
-git clone https://github.com/abdur75648/high-resolution-urdu-text-recognition.git
+git clone https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition.git
 ```
 
 2. Install the requirements
@@ -30,29 +30,29 @@ pip3 install -r requirements.txt -f https://download.pytorch.org/whl/torch_stabl
 
 1. Training
 ```
-python3 train.py --train_data urdu_data_lmbd/train/real/ --valid_data urdu_data_lmbd/val/ --FeatureExtraction UNet --SequenceModeling DBiLSTM --Prediction CTC --exp_name UNet_DBiLSTM_CTC --num_epochs 100 --batch_size 8 --device_id 3
+python3 train.py --train_data path/to/LMDB/data/folder/train/ --valid_data path/to/LMDB/data/folder/val/ --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC --exp_name UTRNet-Large --num_epochs 100 --batch_size 8
 
 ```
 
 2. Testing
 ```
-CUDA_VISIBLE_DEVICES=0 python test.py --eval_data path/to/lmdb/data/folder --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC --saved_model saved_models/experiment_1/best_norm_ED.pth
+CUDA_VISIBLE_DEVICES=0 python test.py --eval_data path/to/LMDB/data/folder/test/ --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC --saved_model saved_models/UTRNet-Large/best_norm_ED.pth
 ```
 
 3. Character-wise Accuracy Testing
 * To create character-wise accuracy table in a CSV file, run the following command
 
 ```
-CUDA_VISIBLE_DEVICES=0 python3 char_test.py --eval_data path/to/lmdb/data/folder --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC  --saved_model saved_models/experiment_1/best_norm_ED.pth
+CUDA_VISIBLE_DEVICES=0 python3 char_test.py --eval_data path/to/LMDB/data/folder/test/ --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC  --saved_model saved_models/UTRNet-Large/best_norm_ED.pth
 ```
 
-* Visualize the result by running ```vis_char_test.py```
+* Visualize the result by running ```char_test_vis```
 
 4. Reading individual images
 * To read a single image, run the following command
 
 ```
-CUDA_VISIBLE_DEVICES=0 python3 read.py --image_path path/to/lmdb/data/folder/1.png --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC  --saved_model saved_models/experiment_1/best_norm_ED.pth
+CUDA_VISIBLE_DEVICES=0 python3 read.py --image_path path/to/image.png --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC  --saved_model saved_models/UTRNet-Large/best_norm_ED.pth
 ```
 
 5. Visualisation of Salency Maps
@@ -60,21 +60,14 @@ CUDA_VISIBLE_DEVICES=0 python3 read.py --image_path path/to/lmdb/data/folder/1.p
 * To visualize the salency maps for an input image, run the following command
 
 ```
-python3 vis_salency.py --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC --saved_model saved_models/experiment_1/best_norm_ED.pth --vis_dir vis_feature_maps --image_path PATH/TO/IMAGE
+python3 vis_salency.py --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC --saved_model saved_models/UTRNet-Large/best_norm_ED.pth --vis_dir vis_feature_maps --image_path path/to/image.pngE
 ```
-
-6. Visualisation of CNN Feature Maps
-
-* To visualize the feature maps for an input image, run the following command
-    * Add ```from utils import draw_feature_map``` in the beginning of CNN code
-    * Add ```draw_feature_map(feature_maps [c,W,H], 'vis_directory', num_channels)``` in the required places in CNN code to visualize the corresponding feature maps
 
 ### Dataset
 1. Create your own lmdb dataset
 ```
 pip3 install fire
 python create_lmdb_dataset.py --inputPath data/ --gtFile data/gt.txt --outputPath result/train
-python create_lmdb_dataset.py --inputPath data_valid/ --gtFile data_valid/gt.txt --outputPath result/valid
 ```
 The structure of data folder as below.
 ```
@@ -89,16 +82,23 @@ data
 At this time, `gt.txt` should be `{imagepath}\t{label}\n` <br>
 For example
 ```
-test/word_1.png Tiredness
-test/word_2.png kills
-test/word_3.png A
+test/word_1.png label1
+test/word_2.png label2
+test/word_3.png label3
 ...
 ```
 
 # Downloads
-1. [Pretrained Model (HRNet-DBiLSTM-CTC)](https://csciitd-my.sharepoint.com/:f:/g/personal/ch7190150_iitd_ac_in/EorhOvQ8q3BLnLqQxtHTztYBReaibafGDOV-B1f4BU9jAQ?e=QceL03)
-2. [Datasets](https://csciitd-my.sharepoint.com/:f:/g/personal/ch7190150_iitd_ac_in/EvUxfO15G_JPp0sAod6t0JgBaibJg4JvVqqRTqlw-pPb4w?e=zNnV8E)
+## Trained Models
+1. [UTRNet-Large](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EeUZUQsvd3BIsPfqFYvPFcUBnxq9pDl-LZrNryIxtyE6Hw?e=MLccZi)
+2. [UTRNet-Small](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EdjltTzAuvdEu-bjUE65yN0BNgCm2grQKWDjbyF0amBcaw?e=yiHcrA)
 
+## Datasets
+1. [UTRSet-Real](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EXRKCnnmCrpLo8z6aQ5AP7wBN_NujFaPuDPvlOB0Br8KKg?e=eBBuJX)
+2. [UTRSet-Synth](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EUVd7N9q5ZhDqIXrcN_BhMkBKQuc00ivNZ2_jXZArC2f0g?e=Gubr7c)
+3. [IIITH (Updated)](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EXg_48rOkoJBqGpXFav2SfYBMLx18zzgQOtj2kNzpeL4bA?e=ef7lLr) ([Original](https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-urdu-ocr))
+4. [UPTI](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EVCJZL8PRWVJmRfhXSGdK2ABR17Jo_lW5Ji62JeBBevxcA?e=GgYC8R) ([Source](https://ui.adsabs.harvard.edu/abs/2013SPIE.8658E..0NS/abstract))
+5. UrduDoc - Will be made available subject to execution of a no-cost license agreement. Please contact authors for the same.
 
 # Updates
 * 01/01/21 - Project Initiated
@@ -118,7 +118,7 @@ test/word_3.png A
 * [Prof. Chetan Arora](https://www.cse.iitd.ac.in/~chetan/)
 
 ## Note
-This is an official repository of the project. The copyright of the dataset and the code belongs to the authors. They are for research purposes only and must not be used for any other purpose without the author's explicit permission.
+This is an official repository of the project. The copyright of the dataset, code & models belongs to the authors. They are for research purposes only and must not be used for any other purpose without the author's explicit permission.
 
 ## Citation
 If you use the code/dataset, please cite the following paper:
@@ -137,3 +137,5 @@ If you use the code/dataset, please cite the following paper:
 }
 ```
 
+### License
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/). This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/) for Noncommercial (academic & research) purposes only and must not be used for any other purpose without the author's explicit permission.
