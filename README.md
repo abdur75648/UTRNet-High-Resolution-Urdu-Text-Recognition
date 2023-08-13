@@ -5,7 +5,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2306.15782-darkred.svg)](https://arxiv.org/abs/2306.15782)
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
-<img width="918" alt="UTRNet-Architecture" src="https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/a549bc6a-7bd6-4584-badb-65c2f4f094b6">
+
+<img width="500" alt="UTRNet-Architecture" src="https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/a549bc6a-7bd6-4584-badb-65c2f4f094b6">
 
 
 ## Using This Repository
