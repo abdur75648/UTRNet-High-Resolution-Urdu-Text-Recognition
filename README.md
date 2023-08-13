@@ -6,8 +6,7 @@
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
 
-<img width="500" alt="UTRNet-Architecture" src="https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/a549bc6a-7bd6-4584-badb-65c2f4f094b6">
-
+<img width="918" alt="UTRNet-Architecture" src="https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/ac27ff67-dd63-4504-b0c4-b95c2dd24677">
 
 ## Using This Repository
 ### Environment
@@ -105,6 +104,7 @@ test/word_3.png label3
 
 ## End-To-End Urdu OCR Webtool
 This was developed by integrating the UTRNet text recognition model with a text detection model for end-to-end Urdu OCR. The webtool may be made available only for non-commercial use upon request. Please contact the authors for the same.
+
 ![website](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/511aeffe-d9b3-41aa-8150-ab91f398ae49)
 
 
