@@ -5,6 +5,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2306.15782-darkred.svg)](https://arxiv.org/abs/2306.15782)
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
+<img width="918" alt="UTRNet-Architecture" src="https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/a549bc6a-7bd6-4584-badb-65c2f4f094b6">
+
 
 ## Using This Repository
 ### Environment
@@ -98,7 +100,12 @@ test/word_3.png label3
 2. [UTRSet-Synth](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EUVd7N9q5ZhDqIXrcN_BhMkBKQuc00ivNZ2_jXZArC2f0g?e=Gubr7c)
 3. [IIITH (Updated)](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EXg_48rOkoJBqGpXFav2SfYBMLx18zzgQOtj2kNzpeL4bA?e=ef7lLr) ([Original](https://cvit.iiit.ac.in/research/projects/cvit-projects/iiit-urdu-ocr))
 4. [UPTI](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EVCJZL8PRWVJmRfhXSGdK2ABR17Jo_lW5Ji62JeBBevxcA?e=GgYC8R) ([Source](https://ui.adsabs.harvard.edu/abs/2013SPIE.8658E..0NS/abstract))
-5. UrduDoc - Will be made available subject to execution of a no-cost license agreement. Please contact authors for the same.
+5. UrduDoc - Will be made available subject to the execution of a no-cost license agreement. Please contact the authors for the same.
+
+## End-To-End Urdu OCR Webtool
+This was developed by integrating the UTRNet text recognition model with a text detection model for end-to-end Urdu OCR. The webtool may be made available only for non-commercial use upon request. Please contact the authors for the same.
+![website](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/511aeffe-d9b3-41aa-8150-ab91f398ae49)
+
 
 # Updates
 * 01/01/21 - Project Initiated
