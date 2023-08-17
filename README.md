@@ -6,7 +6,8 @@
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
 
-<img width="918" alt="UTRNet-Architecture" src="https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/ac27ff67-dd63-4504-b0c4-b95c2dd24677">
+![P2 49-poster](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/bc4f22a6-e9e9-49e4-8caf-4d87d27855b3)
+
 
 ## Using This Repository
 ### Environment
