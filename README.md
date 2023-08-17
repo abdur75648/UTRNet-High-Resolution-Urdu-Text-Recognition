@@ -103,7 +103,7 @@ test/word_3.png label3
 5. UrduDoc - Will be made available subject to the execution of a no-cost license agreement. Please contact the authors for the same.
 
 ## Text Detection (Supplementary)
-The text detection inference code & model based on ContourNet is [here](https://github.com/abdur75648/urdu-detection). As mentioned in the paper, it maybe integrated with UTRNet for a combined text detection+recognition and hence an end-to-end Urdu OCR.
+The text detection inference code & model based on ContourNet is [here](https://github.com/abdur75648/urdu-text-detection). As mentioned in the paper, it may be integrated with UTRNet for a combined text detection+recognition and hence an end-to-end Urdu OCR.
 
 ## End-To-End Urdu OCR Webtool
 This was developed by integrating the UTRNet text recognition model with a text detection model for end-to-end Urdu OCR. The webtool may be made available only for non-commercial use upon request. Please contact the authors for the same.
