@@ -6,7 +6,9 @@
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
 
-![P2 49-poster](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/bc4f22a6-e9e9-49e4-8caf-4d87d27855b3)
+The Poster:
+
+![P2 49-poster](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/dea7c7a6-5e13-400f-8ba7-8356a794897d)
 
 
 ## Using This Repository
@@ -118,6 +120,7 @@ This was developed by integrating the UTRNet text recognition model with a text 
 * 12/12/22 - Repository Created
 * 20/12/22 - Results Updated
 * 19/04/23 - Paper accepted at [ICDAR 2023](https://icdar2023.org/)
+* 23/08/23 - Poster presentation at [ICDAR 2023](https://icdar2023.org/)
 
 # Acknowledgements
 * This repository is based on [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark)
