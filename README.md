@@ -3,6 +3,8 @@
 [![UTRNet](https://img.shields.io/badge/UTRNet:%20High--Resolution%20Urdu%20Text%20Recognition-blueviolet?logo=github&style=flat-square)](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition)
 [![Website](https://img.shields.io/badge/Website-Visit%20Here-brightgreen?style=flat-square)](https://abdur75648.github.io/UTRNet/)
 [![arXiv](https://img.shields.io/badge/arXiv-2306.15782-darkred.svg)](https://arxiv.org/abs/2306.15782)
+[![SpringerLink](https://img.shields.io/badge/springer-page-darkblue.svg)](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_19)
+[![SpringerLink](https://img.shields.io/badge/springer-PDF-blue.svg)](https://rdcu.be/dkbIF)
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
 
@@ -139,16 +141,22 @@ This is an official repository of the project. The copyright of the dataset, cod
 If you use the code/dataset, please cite the following paper:
 
 ```BibTeX
-@article{rahman2023utrnet,
-      title={UTRNet: High-Resolution Urdu Text Recognition In Printed Documents}, 
-      author={Abdur Rahman and Arjun Ghosh and Chetan Arora},
-      journal={arXiv preprint arXiv:2306.15782},
-      year={2023},
-      eprint={2306.15782},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      doi = {https://doi.org/10.48550/arXiv.2306.15782},
-      url = {https://arxiv.org/abs/2306.15782}
+@InProceedings{10.1007/978-3-031-41734-4_19,
+		author="Rahman, Abdur
+		and Ghosh, Arjun
+		and Arora, Chetan",
+		editor="Fink, Gernot A.
+		and Jain, Rajiv
+		and Kise, Koichi
+		and Zanibbi, Richard",
+		title="UTRNet: High-Resolution Urdu Text Recognition in Printed Documents",
+		booktitle="Document Analysis and Recognition - ICDAR 2023",
+		year="2023",
+		publisher="Springer Nature Switzerland",
+		address="Cham",
+		pages="305--324",
+		isbn="978-3-031-41734-4",
+		doi="https://doi.org/10.1007/978-3-031-41734-4_19"
 }
 ```
 
