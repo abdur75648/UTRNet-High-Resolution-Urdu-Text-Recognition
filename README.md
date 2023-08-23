@@ -3,8 +3,8 @@
 [![UTRNet](https://img.shields.io/badge/UTRNet:%20High--Resolution%20Urdu%20Text%20Recognition-blueviolet?logo=github&style=flat-square)](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition)
 [![Website](https://img.shields.io/badge/Website-Visit%20Here-brightgreen?style=flat-square)](https://abdur75648.github.io/UTRNet/)
 [![arXiv](https://img.shields.io/badge/arXiv-2306.15782-darkred.svg)](https://arxiv.org/abs/2306.15782)
-[![SpringerLink](https://img.shields.io/badge/springer-page-darkblue.svg)](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_19)
-[![SpringerLink](https://img.shields.io/badge/springer-PDF-blue.svg)](https://rdcu.be/dkbIF)
+[![SpringerLink](https://img.shields.io/badge/Springer-Page-darkblue.svg)](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_19)
+[![SpringerLink](https://img.shields.io/badge/Springer-PDF-blue.svg)](https://rdcu.be/dkbIF)
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
 
