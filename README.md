@@ -110,6 +110,9 @@ test/word_3.png label3
 ## Text Detection (Supplementary)
 The text detection inference code & model based on ContourNet is [here](https://github.com/abdur75648/urdu-text-detection). As mentioned in the paper, it may be integrated with UTRNet for a combined text detection+recognition and hence an end-to-end Urdu OCR.
 
+## Synthetic Data Generation using Urdu-Synth (Supplementary)
+The [UTRSet-Synth](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EUVd7N9q5ZhDqIXrcN_BhMkBKQuc00ivNZ2_jXZArC2f0g?e=Gubr7c) dataset was generated using a custom-designed robust synthetic data generation module - [Urdu Synth](https://github.com/abdur75648/urdu-synth/). 
+
 ## End-To-End Urdu OCR Webtool
 This was developed by integrating the UTRNet text recognition model with a text detection model for end-to-end Urdu OCR. The webtool may be made available only for non-commercial use upon request. Please contact the authors for the same.
 
