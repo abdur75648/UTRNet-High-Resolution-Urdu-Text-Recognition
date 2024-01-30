@@ -1,10 +1,11 @@
 # UTRNet: High-Resolution Urdu Text Recognition
 
 [![UTRNet](https://img.shields.io/badge/UTRNet:%20High--Resolution%20Urdu%20Text%20Recognition-blueviolet?logo=github&style=flat-square)](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition)
-[![Website](https://img.shields.io/badge/Website-Visit%20Here-brightgreen?style=flat-square)](https://abdur75648.github.io/UTRNet/)
+[![Website](https://img.shields.io/badge/Website-Visit%20Here-darkgreen?style=flat-square)](https://abdur75648.github.io/UTRNet/)
 [![arXiv](https://img.shields.io/badge/arXiv-2306.15782-darkred.svg)](https://arxiv.org/abs/2306.15782)
 [![SpringerLink](https://img.shields.io/badge/Springer-Page-darkblue.svg)](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_19)
 [![SpringerLink](https://img.shields.io/badge/Springer-PDF-blue.svg)](https://rdcu.be/dkbIF)
+[![Demo](https://img.shields.io/badge/Demo-Online-brightgreen.svg)](https://abdur75648-urduocr-utrnet.hf.space)
 
 **Official Implementation of the paper *"UTRNet: High-Resolution Urdu Text Recognition In Printed Documents"***
 
@@ -114,7 +115,12 @@ The text detection inference code & model based on ContourNet is [here](https://
 The [UTRSet-Synth](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EUVd7N9q5ZhDqIXrcN_BhMkBKQuc00ivNZ2_jXZArC2f0g?e=Gubr7c) dataset was generated using a custom-designed robust synthetic data generation module - [Urdu Synth](https://github.com/abdur75648/urdu-synth/). 
 
 ## End-To-End Urdu OCR Webtool
-This was developed by integrating the UTRNet text recognition model with a text detection model for end-to-end Urdu OCR. The webtool may be made available only for non-commercial use upon request. Please contact the authors for the same.
+This was developed by integrating the UTRNet text recognition model with a text detection model trained on UrduDoc for end-to-end Urdu OCR. Due to computational resources limit, access to it is not publicly available but may be made available only for non-commercial use upon request. Please contact the authors for the same.
+
+### Demo
+**A simpler version deployed on Hugging Face Spaces is available for demo. You can access it *[here](https://abdur75648-urduocr-utrnet.hf.space)*.**
+
+> **Note:** This version uses a 3rd party library for text detection and hence is much less accurate than the original web app in line detection.
 
 ![website](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/511aeffe-d9b3-41aa-8150-ab91f398ae49)
 
