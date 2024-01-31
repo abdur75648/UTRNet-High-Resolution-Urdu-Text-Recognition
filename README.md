@@ -115,12 +115,11 @@ The text detection inference code & model based on ContourNet is [here](https://
 The [UTRSet-Synth](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EUVd7N9q5ZhDqIXrcN_BhMkBKQuc00ivNZ2_jXZArC2f0g?e=Gubr7c) dataset was generated using a custom-designed robust synthetic data generation module - [Urdu Synth](https://github.com/abdur75648/urdu-synth/). 
 
 ## End-To-End Urdu OCR Webtool
-This was developed by integrating the UTRNet text recognition model with a text detection model trained on UrduDoc for end-to-end Urdu OCR. Due to computational resources limit, access to it is not publicly available but may be made available only for non-commercial use upon request. Please contact the authors for the same.
+This tool was developed by integrating the UTRNet (https://abdur75648.github.io/UTRNe) with a text detection model ([YoloV8](https://docs.ultralytics.com/) finetuned on [UrduDoc](https://paperswithcode.com/dataset/urdudoc)) for end-to-end Urdu OCR.
 
-### Demo
-**A simpler version deployed on Hugging Face Spaces is available for demo. You can access it *[here](https://abdur75648-urduocr-utrnet.hf.space)*.**
+The application is deployed on Hugging Face Spaces and is available for a live demo. You can access it *[here](https://abdur75648-urduocr-utrnet.hf.space)*. If you prefer to run it locally, you can clone its repository and follow the instructions given there - [Repo](https://github.com/abdur75648/End-To-OCR-UTRNet).
 
-> **Note:** This version uses a 3rd party library for text detection and hence is much less accurate than the original web app in line detection.
+> **Note:** *This version of the application uses a YoloV8 model for text detection. The original version of UTRNet uses ContourNet for this purpose. However, due to deployment issues, we have opted for YoloV8 in this demo. While YoloV8 is as accurate as ContourNet, it offers the advantages of faster processing and greater efficiency.*
 
 ![website](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition/assets/66300465/511aeffe-d9b3-41aa-8150-ab91f398ae49)
 
@@ -132,6 +131,8 @@ This was developed by integrating the UTRNet text recognition model with a text 
 * 20/12/22 - Results Updated
 * 19/04/23 - Paper accepted at [ICDAR 2023](https://icdar2023.org/)
 * 23/08/23 - Poster presentation at [ICDAR 2023](https://icdar2023.org/)
+* 31/08/23 - Webtool made available
+* 31/01/24 - Updated Webtool (with YoloV8) made available via HuggingFace [here](https://abdur75648-urduocr-utrnet.hf.space/)
 
 # Acknowledgements
 * This repository is based on [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark)
