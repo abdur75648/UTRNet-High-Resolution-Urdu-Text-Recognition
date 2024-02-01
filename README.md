@@ -117,7 +117,7 @@ The [UTRSet-Synth](https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_ii
 ## End-To-End Urdu OCR Webtool
 This tool was developed by integrating the UTRNet (https://abdur75648.github.io/UTRNe) with a text detection model ([YoloV8](https://docs.ultralytics.com/) finetuned on [UrduDoc](https://paperswithcode.com/dataset/urdudoc)) for end-to-end Urdu OCR.
 
-The application is deployed on Hugging Face Spaces and is available for a live demo. You can access it *[here](https://abdur75648-urduocr-utrnet.hf.space)*. If you prefer to run it locally, you can clone its repository and follow the instructions given there - [Repo](https://github.com/abdur75648/End-To-OCR-UTRNet).
+The application is deployed on Hugging Face Spaces and is available for a live demo. You can access it *[here](https://abdur75648-urduocr-utrnet.hf.space)*. If you prefer to run it locally, you can clone its repository and follow the instructions given there - [Repo](https://github.com/abdur75648/End-To-End-Urdu-OCR-WebApp).
 
 > **Note:** *This version of the application uses a YoloV8 model for text detection. The original version of UTRNet uses ContourNet for this purpose. However, due to deployment issues, we have opted for YoloV8 in this demo. While YoloV8 is as accurate as ContourNet, it offers the advantages of faster processing and greater efficiency.*
 
