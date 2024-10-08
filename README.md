@@ -98,7 +98,7 @@ test/word_3.png label3
 
 # Downloads
 ## Trained Models
-1. [UTRNet-Large]([https://csciitd-my.sharepoint.com/:u:/g/personal/ch7190150_iitd_ac_in/EeUZUQsvd3BIsPfqFYvPFcUBnxq9pDl-LZrNryIxtyE6Hw?e=MLccZi](https://drive.google.com/file/d/1xXG7vsSePBw4vtapIEdPWEZ-qrbR9Q9K/view?usp=sharing))
+1. [UTRNet-Large](https://drive.google.com/file/d/1xXG7vsSePBw4vtapIEdPWEZ-qrbR9Q9K/view?usp=sharing)
 2. [UTRNet-Small](https://drive.google.com/file/d/185hvyFRfGxe4ohV-oafy_GXnl895hxtY/view?usp=sharing)
 
 ## Datasets
