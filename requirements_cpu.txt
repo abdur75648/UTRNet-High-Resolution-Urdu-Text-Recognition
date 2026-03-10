@@ -1,0 +1,13 @@
+# CPU-only requirements for inference
+# Install with: pip install -r requirements_cpu.txt
+# For GPU/training requirements, see requirements.txt
+torch
+torchvision
+Pillow
+numpy
+timm
+fire
+PyArabic
+arabic-reshaper
+six
+einops

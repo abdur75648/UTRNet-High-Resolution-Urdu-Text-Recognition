@@ -11,7 +11,7 @@ import os
 import pytz
 import math
 import argparse
-from PIL import Image
+from PIL import Image, ImageOps
 from datetime import datetime
 
 import torch
@@ -42,14 +42,16 @@ def read(opt, device):
     model = model.to(device)
 
     # load model
-    model.load_state_dict(torch.load(opt.saved_model, map_location=device))
+    model.load_state_dict(torch.load(opt.saved_model, map_location=device, weights_only=True))
     logger.log('Loaded pretrained model from %s' % opt.saved_model)
     model.eval()
     
+    img = Image.open(opt.image_path)
+    img = ImageOps.exif_transpose(img)  # Handle EXIF orientation from phone cameras
     if opt.rgb:
-        img = Image.open(opt.image_path).convert('RGB')
+        img = img.convert('RGB')
     else:
-        img = Image.open(opt.image_path).convert('L')
+        img = img.convert('L')
     img = img.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
     w, h = img.size
     ratio = w / float(h)

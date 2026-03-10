@@ -16,10 +16,18 @@ The Poster:
 
 ## Using This Repository
 ### Environment
-* Python 3.7
-* Pytorch 1.9.1+cu111
+* Python 3.7+
+* Pytorch 1.9.1+cu111 (GPU) or PyTorch 2.x (CPU/GPU)
 * Torchvision 0.10.1+cu111
-* CUDA 11.4
+* CUDA 11.4 (optional — CPU-only is supported)
+
+### CPU-Only Setup
+For inference without a GPU:
+```
+python -m venv venv
+venv\Scripts\activate  # Windows
+pip install -r requirements_cpu.txt
+```
 
 ### Installation
 1. Clone the repository
@@ -70,6 +78,25 @@ CUDA_VISIBLE_DEVICES=0 python3 read.py --image_path path/to/image.png --FeatureE
 ```
 python3 vis_salency.py --FeatureExtraction HRNet --SequenceModeling DBiLSTM --Prediction CTC --saved_model saved_models/UTRNet-Large/best_norm_ED.pth --vis_dir vis_feature_maps --image_path path/to/image.pngE
 ```
+
+6. End-to-End Document OCR (YOLO + UTRNet)
+
+To process a full document image (detect text lines and recognize each):
+```
+pip install ultralytics
+# Download YOLO model from: https://huggingface.co/spaces/abdur75648/UrduOCR-UTRNet/resolve/main/yolov8m_UrduDoc.pt
+python process_document.py --image_path path/to/document.png --output_file output.txt
+```
+This script uses YOLOv8 for text line detection and UTRNet for recognition, matching the [online demo](https://abdur75648-urduocr-utrnet.hf.space/).
+
+### Running Tests
+```
+pip install pytest
+python -m pytest tests/ -v
+```
+
+### PyTorch 2.x Compatibility
+This repository is compatible with PyTorch 2.x. The deprecated `torch._utils._accumulate` import has been replaced with `itertools.accumulate`.
 
 ### Dataset
 1. Create your own lmdb dataset
